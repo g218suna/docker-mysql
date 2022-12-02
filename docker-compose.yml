@@ -5,7 +5,7 @@ services:
     image: mysql:8.0.31
     container_name: mysql_container
     environment:
-      MYSQL_ROOT_PASSWORD: my-secret-pw # MySQLパスワード設定
+      MYSQL_ROOT_PASSWORD: root # MySQLパスワード設定
       MYSQL_DATABASE: hand_motion_database # MySQLデータベース名設定
       TZ: "Asia/Tokyo"
     volumes:
