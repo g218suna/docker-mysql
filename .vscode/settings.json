@@ -1,0 +1,18 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "HandMotionTracking",
+            "connectionTimeout": 60,
+            "username": "root",
+            "database": "hand_motion_database",
+            "password": "root"
+        }
+    ]
+}
