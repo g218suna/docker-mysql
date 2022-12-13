@@ -2,14 +2,15 @@ version: '3'
 
 services:
   mysql:
+    build: ./DB/ # Build from Dockerfile
     image: mysql:8.0.31-debian
     container_name: hand_motion_tracking_container
     environment:
-      MYSQL_ROOT_PASSWORD: root # MySQLパスワード設定
-      MYSQL_DATABASE: hand_motion_database # MySQLデータベース名設定
+      MYSQL_ROOT_PASSWORD: root # MySQL password setting
+      MYSQL_DATABASE: hand_motion_database # MySQL Database name setting
       TZ: "Asia/Tokyo"
     volumes:
-    - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf # MySQLの設定ファイル指定
-    - ./mysql/DB:/docker-entrypoint-initdb.d
+      - ./my.cnf:/etc/mysql/conf.d/my.cnf
+      - ./DB/sql:/docker-entrypoint-initdb.d
     ports:
-    - '3306:3306'
+      - '3306:3306'

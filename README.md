@@ -17,3 +17,10 @@ cd docker-mysql
 ```
 docker-compose up -d
 ```
+
+* vim install
+
+```
+apt-get update
+apt-get install vim
+```
