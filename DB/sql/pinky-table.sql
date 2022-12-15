@@ -1,0 +1,19 @@
+CREATE TABLE `pinky_data` (
+    `FingerId` INT(10) UNSIGNED NOT NULL,
+    `PinkyMeta_X` FLOAT NOT NULL DEFAULT 0,
+    `PinkyMeta_Y` FLOAT NOT NULL DEFAULT 0,
+    `PinkyMeta_Z` FLOAT NOT NULL DEFAULT 0,
+    `PinkyProx_X` FLOAT NOT NULL DEFAULT 0,
+    `PinkyProx_Y` FLOAT NOT NULL DEFAULT 0,
+    `PinkyProx_Z` FLOAT NOT NULL DEFAULT 0,
+    `PinkyInter_X` FLOAT NOT NULL DEFAULT 0,
+    `PinkyInter_Y` FLOAT NOT NULL DEFAULT 0,
+    `PinkyInter_Z` FLOAT NOT NULL DEFAULT 0,
+    `PinkyDist_X` FLOAT NOT NULL DEFAULT 0,
+    `PinkyDist_Y` FLOAT NOT NULL DEFAULT 0,
+    `PinkyDist_Z` FLOAT NOT NULL DEFAULT 0,
+    `PinkyDistRotation_R` FLOAT NOT NULL DEFAULT 0,
+    `PinkyDistRotation_P` FLOAT NOT NULL DEFAULT 0,
+    `PinkyDistRotation_Y` FLOAT NOT NULL DEFAULT 0,
+    FOREIGN KEY `PinkyFingerID`(`FingerId`) REFERENCES `source_data`(`Id`) ON UPDATE NO ACTION ON DELETE NO ACTION
+) COLLATE = 'utf8mb4_0900_ai_ci' ENGINE = InnoDB;
