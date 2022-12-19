@@ -1,5 +1,5 @@
 CREATE TABLE `thumb_data` (
-    `FingerId` INT(10) UNSIGNED NOT NULL,
+    `FingerId` INT(10) UNSIGNED NOT NULL UNIQUE,
     `ThumbMeta_X` FLOAT NOT NULL DEFAULT 0,
     `ThumbMeta_Y` FLOAT NOT NULL DEFAULT 0,
     `ThumbMeta_Z` FLOAT NOT NULL DEFAULT 0,

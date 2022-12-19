@@ -1,5 +1,5 @@
 CREATE TABLE `pinky_data` (
-    `FingerId` INT(10) UNSIGNED NOT NULL,
+    `FingerId` INT(10) UNSIGNED NOT NULL UNIQUE,
     `PinkyMeta_X` FLOAT NOT NULL DEFAULT 0,
     `PinkyMeta_Y` FLOAT NOT NULL DEFAULT 0,
     `PinkyMeta_Z` FLOAT NOT NULL DEFAULT 0,

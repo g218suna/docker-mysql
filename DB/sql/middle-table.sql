@@ -1,5 +1,5 @@
 CREATE TABLE `middle_data` (
-    `FingerId` INT(10) UNSIGNED NOT NULL,
+    `FingerId` INT(10) UNSIGNED NOT NULL UNIQUE,
     `MiddleMeta_X` FLOAT NOT NULL DEFAULT 0,
     `MiddleMeta_Y` FLOAT NOT NULL DEFAULT 0,
     `MiddleMeta_Z` FLOAT NOT NULL DEFAULT 0,

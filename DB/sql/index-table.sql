@@ -1,5 +1,5 @@
 CREATE TABLE `index_data` (
-    `FingerId` INT(10) UNSIGNED NOT NULL,
+    `FingerId` INT(10) UNSIGNED NOT NULL UNIQUE,
     `IndexMeta_X` FLOAT NOT NULL DEFAULT 0,
     `IndexMeta_Y` FLOAT NOT NULL DEFAULT 0,
     `IndexMeta_Z` FLOAT NOT NULL DEFAULT 0,

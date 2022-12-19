@@ -1,5 +1,5 @@
 CREATE TABLE `ring_data` (
-    `FingerId` INT(10) UNSIGNED NOT NULL,
+    `FingerId` INT(10) UNSIGNED NOT NULL UNIQUE,
     `RingMeta_X` FLOAT NOT NULL DEFAULT 0,
     `RingMeta_Y` FLOAT NOT NULL DEFAULT 0,
     `RingMeta_Z` FLOAT NOT NULL DEFAULT 0,
