@@ -1,5 +1,5 @@
 CREATE TABLE `pinky_data` (
-    `FingerId` INT(10) UNSIGNED NOT NULL UNIQUE,
+    `PinkyId` INT(10) UNSIGNED NOT NULL UNIQUE,
     `PinkyMeta_X` FLOAT NOT NULL DEFAULT 0,
     `PinkyMeta_Y` FLOAT NOT NULL DEFAULT 0,
     `PinkyMeta_Z` FLOAT NOT NULL DEFAULT 0,
@@ -15,5 +15,5 @@ CREATE TABLE `pinky_data` (
     `PinkyDistRotation_R` FLOAT NOT NULL DEFAULT 0,
     `PinkyDistRotation_P` FLOAT NOT NULL DEFAULT 0,
     `PinkyDistRotation_Y` FLOAT NOT NULL DEFAULT 0,
-    FOREIGN KEY `PinkyFingerID`(`FingerId`) REFERENCES `source_data`(`Id`) ON UPDATE NO ACTION ON DELETE NO ACTION
+    FOREIGN KEY `PinkyFingerID`(`PinkyId`) REFERENCES `source_data`(`Id`) ON UPDATE NO ACTION ON DELETE NO ACTION
 ) COLLATE = 'utf8mb4_0900_ai_ci' ENGINE = InnoDB;

@@ -1,5 +1,5 @@
 CREATE TABLE `thumb_data` (
-    `FingerId` INT(10) UNSIGNED NOT NULL UNIQUE,
+    `ThumbId` INT(10) UNSIGNED NOT NULL UNIQUE,
     `ThumbMeta_X` FLOAT NOT NULL DEFAULT 0,
     `ThumbMeta_Y` FLOAT NOT NULL DEFAULT 0,
     `ThumbMeta_Z` FLOAT NOT NULL DEFAULT 0,
@@ -15,5 +15,5 @@ CREATE TABLE `thumb_data` (
     `ThumbDistRotation_R` FLOAT NOT NULL DEFAULT 0,
     `ThumbDistRotation_P` FLOAT NOT NULL DEFAULT 0,
     `ThumbDistRotation_Y` FLOAT NOT NULL DEFAULT 0,
-    FOREIGN KEY `ThumbFingerID`(`FingerId`) REFERENCES `source_data`(`Id`) ON UPDATE NO ACTION ON DELETE NO ACTION
+    FOREIGN KEY `ThumbFingerID`(`ThumbId`) REFERENCES `source_data`(`Id`) ON UPDATE NO ACTION ON DELETE NO ACTION
 ) COLLATE = 'utf8mb4_0900_ai_ci' ENGINE = InnoDB;

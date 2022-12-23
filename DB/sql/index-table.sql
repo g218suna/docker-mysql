@@ -1,5 +1,5 @@
 CREATE TABLE `index_data` (
-    `FingerId` INT(10) UNSIGNED NOT NULL UNIQUE,
+    `IndexId` INT(10) UNSIGNED NOT NULL UNIQUE,
     `IndexMeta_X` FLOAT NOT NULL DEFAULT 0,
     `IndexMeta_Y` FLOAT NOT NULL DEFAULT 0,
     `IndexMeta_Z` FLOAT NOT NULL DEFAULT 0,
@@ -15,5 +15,5 @@ CREATE TABLE `index_data` (
     `IndexDistRotation_R` FLOAT NOT NULL DEFAULT 0,
     `IndexDistRotation_P` FLOAT NOT NULL DEFAULT 0,
     `IndexDistRotation_Y` FLOAT NOT NULL DEFAULT 0,
-    FOREIGN KEY `IndexFingerID`(`FingerId`) REFERENCES `source_data`(`Id`) ON UPDATE NO ACTION ON DELETE NO ACTION
+    FOREIGN KEY `IndexFingerID`(`IndexId`) REFERENCES `source_data`(`Id`) ON UPDATE NO ACTION ON DELETE NO ACTION
 ) COLLATE = 'utf8mb4_0900_ai_ci' ENGINE = InnoDB;
