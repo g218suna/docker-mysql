@@ -15,5 +15,11 @@ CREATE TABLE `ring_data` (
     `RingDistRotation_R` FLOAT NOT NULL DEFAULT 0,
     `RingDistRotation_P` FLOAT NOT NULL DEFAULT 0,
     `RingDistRotation_Y` FLOAT NOT NULL DEFAULT 0,
+    `RingPoint_X` FLOAT NOT NULL DEFAULT 0,
+    `RingPoint_Y` FLOAT NOT NULL DEFAULT 0,
+    `RingPoint_Z` FLOAT NOT NULL DEFAULT 0,
+    `RingPoint_A` FLOAT NOT NULL DEFAULT 0,
+    `RingPoint_B` FLOAT NOT NULL DEFAULT 0,
+    `RingPoint_C` FLOAT NOT NULL DEFAULT 0,
     FOREIGN KEY `RingFingerID`(`RingId`) REFERENCES `source_data`(`Id`) ON UPDATE NO ACTION ON DELETE NO ACTION
 ) COLLATE = 'utf8mb4_0900_ai_ci' ENGINE = InnoDB;

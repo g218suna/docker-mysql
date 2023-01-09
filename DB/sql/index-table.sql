@@ -15,5 +15,11 @@ CREATE TABLE `index_data` (
     `IndexDistRotation_R` FLOAT NOT NULL DEFAULT 0,
     `IndexDistRotation_P` FLOAT NOT NULL DEFAULT 0,
     `IndexDistRotation_Y` FLOAT NOT NULL DEFAULT 0,
+    `IndexPoint_X` FLOAT NOT NULL DEFAULT 0,
+    `IndexPoint_Y` FLOAT NOT NULL DEFAULT 0,
+    `IndexPoint_Z` FLOAT NOT NULL DEFAULT 0,
+    `IndexPoint_A` FLOAT NOT NULL DEFAULT 0,
+    `IndexPoint_B` FLOAT NOT NULL DEFAULT 0,
+    `IndexPoint_C` FLOAT NOT NULL DEFAULT 0,
     FOREIGN KEY `IndexFingerID`(`IndexId`) REFERENCES `source_data`(`Id`) ON UPDATE NO ACTION ON DELETE NO ACTION
 ) COLLATE = 'utf8mb4_0900_ai_ci' ENGINE = InnoDB;

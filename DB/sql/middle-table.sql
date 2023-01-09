@@ -15,5 +15,11 @@ CREATE TABLE `middle_data` (
     `MiddleDistRotation_R` FLOAT NOT NULL DEFAULT 0,
     `MiddleDistRotation_P` FLOAT NOT NULL DEFAULT 0,
     `MiddleDistRotation_Y` FLOAT NOT NULL DEFAULT 0,
+    `MiddlePoint_X` FLOAT NOT NULL DEFAULT 0,
+    `MiddlePoint_Y` FLOAT NOT NULL DEFAULT 0,
+    `MiddlePoint_Z` FLOAT NOT NULL DEFAULT 0,
+    `MiddlePoint_A` FLOAT NOT NULL DEFAULT 0,
+    `MiddlePoint_B` FLOAT NOT NULL DEFAULT 0,
+    `MiddlePoint_C` FLOAT NOT NULL DEFAULT 0,
     FOREIGN KEY `MiddleFingerID`(`MiddleId`) REFERENCES `source_data`(`Id`) ON UPDATE NO ACTION ON DELETE NO ACTION
 ) COLLATE = 'utf8mb4_0900_ai_ci' ENGINE = InnoDB;
